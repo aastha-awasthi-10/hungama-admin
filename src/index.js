@@ -25,6 +25,7 @@ const options = {
   }
 };
 
+
 ReactDOM.render(
   <GlobalStateContextProvider>
     <AlertProvider template={AlertTemplate} {...options}>
