@@ -1,0 +1,29 @@
+
+
+.d11_app_store_box {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.d11_app_store_box li {
+    /* width: 47%; */
+    float: left;
+    margin-right: 3%;
+}
+
+.d11_app_store_box > li > a{
+    width: 100%;
+    display: inline-block;
+}
+
+.d11_app_store_box img {
+    object-fit: contain;
+    max-height: 100px;
+}

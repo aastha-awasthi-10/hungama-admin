@@ -1,0 +1,474 @@
+@media (max-width: 1919.98px){
+    .full_container{ max-width: 100%;}    
+}
+
+@media (max-width: 1439.98px){}
+
+@media (max-width: 1199.98px){
+    html { font-size: 12px;}
+    .multiple-column {
+        flex: 1;
+        max-width: 100%;
+    }
+  
+    .banner_block{ min-height: 35rem;}
+    .banner_title{ font-size: 3.8rem;}
+    
+    .about_img_sec { width: 25rem; right: calc(-25rem - 1.07rem);}
+    .services_left_block{ left: -18rem;}
+    
+    .section_title{ font-size: 3.5rem;}
+    
+    .download_app_block { height: 35rem;}
+    .service_list_sec.first{ width: 20rem;}
+    .service_list_sec.second,
+    .service_list_block.second .service_list_sec.first{ width: 15rem;}
+    .service_title{ font-size: 1.8rem;}
+    .service_list_block.second { top: 9.8rem; left: 22.5rem;}
+    .services_left_block { left: -8rem; top: -6rem;}
+    .download_app_screen { width: 55rem; left: -50rem;}
+    .service_tab_links.nav-tabs .nav-link{ width: 8.5rem; height: 8.5rem; margin-right: 2rem;}
+    .service_list_link li a .heading{ font-size: 2.4rem;}
+    
+    .services_block::before { border-bottom: 10rem solid #faa61a; border-right: 15rem solid transparent;}
+
+  
+/*    Jatin CSS */
+    
+    .map:after {
+    top: -20px;
+    right: -20px;
+        height: 300px;
+}
+    
+    .profile_rating a.credit {float: none; }
+    .profile_rating .rating {margin-bottom: 10px; }
+    .profile_rating {text-align: center; }
+    .sidebar_main_menu li a {padding: 12px 12px 12px 35px; font-size: 13px; 
+        background-position: 9px 17px;
+    background-size: 19px;
+    }
+    
+    .sidebar_main_menu li.active a, .sidebar_main_menu li a.booking:hover, .sidebar_main_menu li a.gift:hover, .sidebar_main_menu li a.address:hover, .sidebar_main_menu li a.manage_card:hover, .sidebar_main_menu li a.favourite:hover, .sidebar_main_menu li a.notification:hover, .sidebar_main_menu li a.refer:hover, .sidebar_main_menu li a.setting:hover {
+    background-position: 9px -20px;
+}
+    
+    .booking_confirm_time_bg.booking_confirm_time .countdown, .booking_confirm_time .countdown {width: 40%; }
+    .booking_confirm_time_bg.booking_confirm_time .detail_share, .booking_confirm_time .detail_share {width: 60%; }
+    
+    .booking_confirm_time {
+    display: flex;
+}
+    .booking_confirm_time .countdown {
+            display: inline-flex;
+    align-items: center;
+        
+    }
+    .add_cart_box .fill_value input{
+        top:0px;
+    }
+    
+}
+
+@media (max-width: 991.98px){
+    .logo{ padding: .8rem 0rem;}
+    .collapse:not(.show){ display: none !important;}
+    .navbar-expand-md .navbar-toggler{ display: block !important;}
+    .navbar-expand-md .navbar-collapse{ width: 100%; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+    .navbar-expand-md .navbar-nav{ width: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 1.5rem;}
+    
+    .banner_block::before{ width: 100%; height: 100%; background-color: rgba(255,255,255,.8); position: absolute; top: 0%; left: 0%; content: '';}
+    .about_img_sec{ right: 0%;}
+    
+    .services_left_block,
+    .services_block::before,
+    .download_app_screen{ display: none;}
+    .services_block{ min-height: inherit;}
+    
+    .client_says_box{ width: 100%; min-height: 23rem;}
+    
+    .download_app_block{ background-image: none !important; background-color: #faa61a;}
+    .download_app_heading{ font-size: 3.8rem;}
+    .download_app_btns li img{ max-width: 13.5rem;}
+    
+    .download_app_block { height: auto; margin: 0rem 0rem;}
+    .download_app_block .container{ position: static; -webkit-transform: translate(0, 0); transform: translate(0, 0);}
+    .footersocila{ margin-top: 1rem;}
+    
+/*    Jatin Css   */
+    
+    .contact_detail .detail p { word-break: break-all; }
+    .contact_detail .icon img {  max-width: 40px; }
+    .contact_detail .icon {margin-right: 10px; }
+    .contact_detail .detail {    width: calc(100% - 54px); }
+    .contact_detail .detail h4 {font-size: 24px; }
+    
+    .inner_content {
+    padding: 40px 0 35px;
+}
+     
+    .sidebar {display: none; max-width: 320px; margin: 0 auto 30px; }
+    
+    .sidebar_toggle:hover, .sidebar_toggle:active, .sidebar_toggle:focus {color: #fff; }
+    .sidebar_toggle {
+    display: inline-block;
+    background: #faa61a;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+        cursor: pointer; 
+}
+    
+    
+     .sidebar_main_menu li a {padding: 12px 12px 12px 50px; font-size: 15px; 
+        background-position:17px 17px;
+    background-size: 23px;
+    }
+    
+    .sidebar_main_menu li.active a, .sidebar_main_menu li a.booking:hover, .sidebar_main_menu li a.gift:hover, .sidebar_main_menu li a.address:hover, .sidebar_main_menu li a.manage_card:hover, .sidebar_main_menu li a.favourite:hover, .sidebar_main_menu li a.notification:hover, .sidebar_main_menu li a.refer:hover, .sidebar_main_menu li a.setting:hover {
+    background-position: 17px -28px;
+}
+
+.location-wrap{
+        margin-top: -100px;
+    }
+    .gift-cards {
+        width: 100%;
+    }
+    .service_tab_links{
+        display: block;
+        text-align: center;
+    }
+    .service_tab_links a {
+        display: inline-block;
+    }
+    
+    
+    
+    
+}
+
+@media (max-width: 767.98px){
+
+    .client_says_box{ min-height: 25rem;}
+    
+    
+    
+    /*===== Jatin =======*/
+    
+    .social_login a {padding: 10px 12px; }
+    .login_wrapper  {min-height:600px; }
+    
+    
+    .inner_content {
+    padding: 40px 0;
+}
+    .contact_form {
+    margin-top: 30px;
+}
+    .map:after {display: none; }
+    .contact_detail .detail p {word-break: break-all; }
+    .contact_detail .icon {display: block; max-width: 100%; text-align: center; margin: 0; }
+    .inner_content .page_title {font-size: 35px; }
+    .contact_detail .detail {width: 100%; text-align: center; margin-bottom: 25px; margin-top: 15px; }
+    .contact_detail {margin-bottom: 0; }
+    .map {margin-top: 30px; }
+    
+    .user_required .next_step {font-size: 14px; }
+    .art_hair .art_hair {margin-left: 0;}
+     .booking_confirm_time .detail_share {width: 100%; text-align: center; }
+    .booking_confirm_time {display: block; }
+    .booking_confirm_time .countdown {display: block; width: 100%; text-align: center;}
+    
+    .booking_confirm_time_bg.booking_confirm_time .detail_share {width: 100%; text-align: left; padding: 0; margin-bottom: 10px; }
+    .booking_confirm_time_bg.booking_confirm_time .barder_detail {max-width: 100%; }
+    .booking_confirm_time_bg.booking_confirm_time .countdown {width: 100%; text-align: center; }
+    .rate_by_client p span {font-size: 16px; }
+
+/*Raju*/
+    .booking_summary table tfoot th{
+        font-size: 24px;
+    }
+    .confirm_booking a{
+        font-size:19px;
+    }
+    .blow-catgory-outer .list-group .list-group-item h1, .tab-content .simply_title_row h4,
+    .simply_title_row h4, .add_services_info h4, .refer-outer h1, .cart-item-modal h2,
+    .cart-item-modal .add_services_info h2, .my_booking > h2, .blow-Dry-outer h3, 
+    .service-offer>h2{
+        font-size: 24px;
+    }
+    .expect-prepare-outer .list-group a h2 {
+        font-size: 15px;
+    }
+    .buttom-line button.view-cart, .buttom-line button.proceed-btn{
+        font-size: 15px;
+    }
+    .location-wrap {
+        margin-top: -60px;
+    }
+    .location-wrap, .location-wrap ul.contry-list{
+        width: 290px;
+    }
+    .services-tab-wrap>.list-group a{
+        width: 120px;
+        height: 120px;
+        margin: 0px;
+    }
+    ul.review-list li .review-user-img{
+        width: 70px;
+    }
+    .address-list li .left-info-address {
+        width: calc(100% - 70px);
+    }
+    .address-list li .edit-delete {
+        width: 70px;
+    }
+    .address-list li .left-info-address p{
+        font-size: 14px;
+    }
+    .edit-delete .check_right {
+        left: 12px;
+        top: -1px;
+    }
+    .add-new-card{
+        width: 100%;
+    }
+    .submit_btns button{
+        padding: 5px 7px;
+    }
+    .postal-code{
+        width: 100%;
+    }
+    .simply_straight_img, .add_services_img, .booking_user {
+        width: 60px;
+    }
+    .simply_straight, .add_services_info_outer,
+    .favourite_booking .user_required {
+        width: calc(100% - 60px) !important;
+        padding-left: 15px;
+        margin: 0px;
+    }
+    .simply_straight_img img, .add_services_img img {
+        max-width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+    .dividers ul, .copy.mt-3, .footersocila {
+        text-align: center !important;
+    }
+    .booking_tab_btn .nav-tabs .nav-link{
+        margin-bottom: 2px !important;
+    }
+    .favourite_booking .user_required{
+        width: 100%;
+    }
+    .barber_whatsapp.align_center {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 575.98px){
+    .navigation .navbar{ padding-left: 15px; padding-right: 15px;}
+    .banner_block { min-height: 30rem;}
+    .book_now_btns a{ padding: .8rem 2.5rem;}
+    .client_says_slider .item { padding: 2.5rem;}
+    .client_says_box p{ padding: 4rem 2rem 0rem;}
+    .client_says_box { min-height: inherit; -webkit-box-shadow: 0rem 0rem 0rem transparent; box-shadow: 0rem 0rem 0rem transparent; border: 1px solid rgba(0,0,0,0.05);}
+    .client_img{ position: relative;}
+    .section_title { font-size: 2.8rem;}
+    .download_app_heading { font-size: 3.5rem;}
+    
+    
+/*    Jatin Css*/
+    
+    .login_box .social_login a {margin: 0 0 5px; width: 100%; }
+    .login_wrapper {padding: 30px 0; min-height:0px; }
+    .page_heading h1 {font-size: 35px; }
+    .page_heading {padding: 25px 0; }
+    .inner_content { padding: 30px 0; }
+    .inner_content .page_title:after {width: 100px; }
+    .inner_content .sub_title {font-size: 18px; }
+    .inner_content .page_title {font-size: 28px; }
+    
+    .booking_panel p, .booking_panel {text-align: center; }
+    .bookingg_rate h5 {text-align: center; margin-top: 10px; }
+    
+    .user_required p, .user_required .user_title {text-align: left; }
+    .waiting_for_confirm .rate_by_client {float: none; }
+    .user_required .user_title {display: block; }
+    .scalp_massage  {margin-bottom: 10px; }
+    .payment_mode_opt:after {display: none; }
+    .booking_user_main {
+    background: #f6f6f6;
+    padding: 10px;
+}
+    .grand_total h3, .booking_summary ul li {text-align: left; }
+    
+    .after_login .navbar-expand-md > .container {display: block; }
+    .after_login .navbar-expand-md > .container .logo {display: block; text-align: center; }
+
+.location-wrap {
+        margin-top: -40px;
+    }
+    .buttom-line button.view-cart, .buttom-line button.proceed-btn{
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    .cart_delet {
+        min-width: 70px;
+        text-align: right;
+    }
+    .blow-catgory-outer .list-group .list-group-item:last-child{
+        margin-bottom: 20px;
+    }
+    .left-info, .review-date{
+        width: 100%;
+        text-align: left;
+    }
+    .review-user-content {
+        width: calc(100% - 70px);
+        float: left;
+        padding-left: 10px;
+    }
+    .new-address-modal h1+input.form-control{
+        width: 100%;
+    }
+    .past_booking .booking_action, .favourite_booking .booking_action{
+        width: 100%;
+    }
+    .past_booking .user_required {
+        width: calc(100% - 80px);
+    }
+
+    .barber_whatsapp.align_center{
+        float: none;
+    }
+    .social_login a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+
+
+    
+    
+}
+
+@media (max-width: 479.98px){
+    .past_booking .booking_panel .user_required {
+        width: 100%;
+    }
+    .cart_delet {
+        min-width: 120px;
+        text-align: right;
+    }
+    .tab-content .cart_delet a{
+        font-size: 11px;
+        padding: 5px 5px;
+    }
+    /*.simply_straight{
+        width: 100%;
+        padding-top: 15px;
+    }*/
+    .banner_title,
+    .download_app_heading{ font-size: 2.5rem;}
+    .download_app_btns li{ margin: .5rem 0.3rem;}
+    .download_app_btns li img { max-width: 10rem;}
+    
+    
+    
+    
+/*    Jatin Css */
+    
+    .login_box h5 {font-size:16px; }
+    .login_wrapper h2 {font-size:35px; }
+    .login_box h3 {font-size:27px; }
+    .social_login {margin:15px 0; }
+    .login_box {padding:20px 15px; }
+    .login_box button[type="submit"] {font-size:16px; }
+    .as_guest {margin-top:20px; }
+    
+    
+    
+    .half_sec {
+    margin: 0;
+    width: 100%;
+    float: left;
+    }
+    .half_sec + .half_sec {margin-top: 1rem;}
+    .page_heading {padding: 18px 0; }
+  .page_heading h1 {
+    font-size: 28px;
+}
+    .inner_content .page_title {font-size: 22px; }
+    .inner_content .page_title:after {width: 70px; }
+    .contact_form textarea.form-control {min-height: 100px; }
+    .submit button[type="submit"] {padding: 10px 50px; font-size: 16px; }
+    .contact_form .form-control {
+    font-size: 14px;
+    padding: 11px 14px;
+    height: auto;
+}
+    
+.booking_user {
+    width: auto;
+    float: none;
+    margin-bottom: 16px;
+}
+    .user_required {
+    display: block;
+    margin-left: 0;
+    vertical-align: middle;
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+    .user_required h3 {display: block; text-align: center; }
+    .user_required p, .user_required .user_title {text-align: center; }
+    .my_booking > h2 {font-size: 22px; }
+    .grand_total h3 {font-size: 20px; }
+    .cancel_waiting_btn .btn {font-size: 14px; }
+    .booking_panel {padding: 15px; }
+    .booking_address p {font-size: 14px; }
+    .scalp_massage h4 {font-size: 21px; }
+    
+    .header_profile .dropdown-toggle > img {width: 35px; height: 35px;     margin-right: 6px; }
+    .home_toggle_block li.notification {
+    margin: 0 5px;
+}
+    
+    .header_profile .dropdown-toggle {font-size: 0; }
+    .booking_panel p, h6.schedule, .booking_summary ul li {font-size: 14px; }
+    .user_required h3 {font-size: 24px; }
+    .profile_name p a {display: block; }
+    .simply_straight_img, .add_services_img, .booking_user {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .simply_straight_img img, .add_services_img img {
+        max-width: 90px;
+        height: 90px;
+    }
+    .simply_straight, .add_services_info_outer, .favourite_booking .user_required,
+    .add_services_info {
+        width: 100% !important;
+        padding-left: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .social_login{
+        display: block;
+    }
+    .social_login a {
+        padding: 10px 15px;
+        text-align: center;
+    }
+    
+    
+}

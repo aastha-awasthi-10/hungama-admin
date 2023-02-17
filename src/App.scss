@@ -1,0 +1,44 @@
+// Styles
+// CoreUI Icons Set
+@import '~@coreui/icons/css/coreui-icons.css';
+// Import Flag Icons Set
+@import '~flag-icon-css/css/flag-icon.min.css';
+// Import Font Awesome Icons Set
+@import '~font-awesome/css/font-awesome.min.css';
+// Import Simple Line Icons Set
+@import '~simple-line-icons/css/simple-line-icons.css';
+// Import Main styles for this application
+@import './scss/style.scss';
+
+
+
+@media(max-width:1560px)
+{
+    .contest-searching.row .col-md-2 {
+        flex: 0 0 28%;
+        max-width: 25%;
+        // margin-bottom: 12px;
+    }
+}
+
+@media(max-width:1199.98px)
+{
+    .multiple-column {
+        flex: 1;
+        max-width: 100%;
+    }
+    .contest-searching.row .col-md-2 {
+        flex: 0 0 33.33%;
+        max-width: 33%;
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width:767px)
+{
+    .contest-searching.row .col-md-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+}

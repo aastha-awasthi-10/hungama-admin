@@ -1,0 +1,95 @@
+import React, { useState, useEffect } from 'react';
+import { ErrorMessage, useForm } from 'react-hook-form';
+import Helper from '../../constants/helper';
+import { useHistory } from "react-router-dom";
+import apiUrl from '../../constants/apiPath';
+import { Button, Card, CardBody, CardHeader, CardTitle, CardFooter, FormGroup, Label, Col, Row } from 'reactstrap';
+import _ from 'lodash';
+import { useAlert } from 'react-alert';
+import useSession from 'react-session-hook';
+
+const AddQuizCategory = (props) => {
+  const session = useSession();
+  let history = useHistory();
+  const alert = useAlert();
+  const { register, handleSubmit, errors, watch } = useForm();
+
+  const [token] = useState(session.token);
+  const [loading, setLoading] = useState(false);
+  const [profilePic, setProfilePic] = useState('');
+  const [preview, setProfilePicPreview] = useState('');
+
+  const onSubmit = async data => {
+    setLoading(true);
+    let formData = new FormData();   
+    let postJson = { title: data.title.trim()};
+    formData.append('data', JSON.stringify(postJson));
+    formData.append('quiz_category_pic', profilePic);
+    let path = apiUrl.add_quiz_category;
+    const fr = await Helper.formPost(formData, path, token);
+    const res = await fr.response.json();
+    if (fr.status === 200) {
+      if (res.success) {
+        setLoading(false);
+        props.history.push('/quiz-category');
+        alert.success(res.msg);
+      } else {
+        alert.error(res.msg);
+        setLoading(false);
+      }
+    } else {
+      alert.error(res.error);
+      setLoading(false);
+    }
+  };
+
+  const onImageChange = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      setProfilePicPreview(URL.createObjectURL(event.target.files[0]));
+      setProfilePic(event.target.files[0]);
+    }
+  }
+
+  useEffect(() => {
+  }, []);
+
+  return (
+    <React.Fragment>
+      <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-info"><h4>Add Quiz Category</h4></CardTitle>
+          </CardHeader>
+          <CardBody>
+            <Row>
+              <Col md={12}>
+                <FormGroup>
+                  <Label className={'col-md-2 pull-left mt-2'}>Quiz Category Title</Label>
+                  <input type="text" name="title" placeholder="Quiz Category Title" autoComplete="off"
+                    className="form-control col-md-8" ref={register({ required: 'Required' })} />
+                  {errors.title && <p className="text-danger marginmessage">Quiz Category Title is required</p>}
+                </FormGroup>
+              </Col>
+              <Col md={12}>
+                <FormGroup>
+                  <Label className={'col-md-2 pull-left mt-2'}>Quiz Category Image</Label>
+                  <input type="file" onChange={onImageChange} name="quiz_category_pic" className="form-control  col-md-8" autoComplete="off" placeholder="Quiz Category Image" />
+                  <ErrorMessage errors={errors} name="quiz_category_pic">
+                    {({ message }) => <p className={"text-danger"}>{message}</p>}
+                  </ErrorMessage>
+                  <img id="target" className={'mt-3 rounded'} height={250} src={preview} />
+                </FormGroup>
+              </Col>
+            </Row>
+          </CardBody>
+          <CardFooter>
+            <Button onClick={() => history.goBack()} className="dark_btn"><i className="fa fa-arrow-left" aria-hidden="true"></i> Back  </Button>
+            <Button className={'ml-2'} type="submit" color="primary">Submit {loading === true ? <i className="fa fa-spinner fa-pulse fa-fw ml-1"></i> : <i className="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>}</Button>
+          </CardFooter>
+        </Card>
+      </form>
+    </React.Fragment>
+  );
+}
+
+export default AddQuizCategory;
